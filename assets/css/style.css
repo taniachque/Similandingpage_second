@@ -1,0 +1,76 @@
+.navbar-custom {
+    background-color: #5dbf40;
+}
+
+.navbar-custom .nav-link {
+    color: #f4eefe;
+  }
+
+.smaller-image {
+    width: 150px; 
+    height: auto; 
+}
+
+.logo-smaller {
+    width: auto; /* Adjust to your desired width (e.g., 30%, 20%) */
+    height: 40%; /* Adjust to your desired height (proportional to width) */
+}
+
+.column-1-hero{
+   text-align: center; 
+}
+
+.labtecnosoc-logo{
+    justify-content: center;
+    text-align: center;
+    padding: 70px;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+}
+
+
+
+/*cards*/
+.bg-custom{
+    text-align: center;
+}
+
+#cards-section {
+    background-color: #f4eefe; 
+    position: relative; 
+    min-height: 100%; 
+    width: 100%; 
+    padding: 10px; 
+}
+
+
+.bg-custom-1 {
+    background-color: transparent;
+}
+
+
+#people-images{
+    padding: 50px;
+}
+
+
+#footer{
+    background-color: #99e968; 
+    position: relative; 
+    min-height: 150%; 
+    width: 100%; 
+    padding: 50px 0;
+}
+  
+.white-link {
+    color: #fff; 
+}
+  
+#favicon {
+    filter: invert(1);
+    height: 100px;
+    width: auto;
+}
