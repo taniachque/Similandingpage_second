@@ -82,19 +82,6 @@ body {
     height: auto;
 }
 
-.fade-in {
-    opacity: 0;
-    animation: fadeInAnimation 4s forwards;
-}
-  
-  @keyframes fadeInAnimation {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
 /*Efecto hover para logo de google play*/ 
   .google-play-link {
