@@ -6,7 +6,7 @@ body {
 /*Header*/
 .navbar-simi{
     color: #f4eefe !important;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
 }
 
@@ -16,6 +16,7 @@ body {
 
 .navbar-custom .nav-link {
     color: #f4eefe !important;
+    font-size: 18px;
 }
 
 .navbar-simi:hover {
@@ -50,12 +51,69 @@ body {
     height: auto;
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 4s forwards;
+}
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/*Efecto hover para logo de google play*/ 
+  .google-play-link {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .google-play-link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+  }
+  
+  .google-play-link:hover:before {
+    opacity: 1;
+  }
+  
+  .logo-smaller {
+    transition: transform 0.3s;
+  }
+  
+  .logo-smaller:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+
+
+
+
 /* Cards */
 .bg-custom{
     text-align: center;
 }
 
 #cards-section {
+    background-color: #f4eefe; 
+    position: relative; 
+    min-height: 100%; 
+    width: 100%; 
+    padding: 10px; 
+}
+
+#cards-section-1 {
     background-color: #f4eefe; 
     position: relative; 
     min-height: 100%; 
