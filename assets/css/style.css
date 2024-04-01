@@ -133,6 +133,7 @@ body {
 
 #cards-section-1 {
     background-color: #f4eefe; 
+    justify-content: center;
     position: relative; 
     min-height: 100%; 
     width: 100%; 
@@ -143,6 +144,10 @@ body {
 
 .bg-custom-1 {
     background-color: transparent;
+}
+
+.col-md-12.text-center {
+  margin-bottom: -30px;
 }
 
 .smaller-image {
