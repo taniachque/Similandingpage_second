@@ -140,6 +140,17 @@ body {
     padding: 10px; 
 }
 
+#cards-section .row {
+  position: relative;
+  z-index: 0;
+}
+
+.title-above-cards {
+  position: relative;
+  z-index: 2;
+}
+
+
 /* Cards-equipo */
 
 .bg-custom-1 {
