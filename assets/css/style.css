@@ -151,6 +151,20 @@ body {
 }
 
 
+/* Cellphone section */
+.cellphone{
+  font-family: 'Text Me One', sans-serif;
+  text-align: center;
+}
+
+#join-simi {
+  color: #444444; /* Cambia el color a tu preferencia, por ejemplo, rojo */
+  /* También puedes agregar otros estilos según tus necesidades */
+}
+
+
+
+
 /* Cards-equipo */
 
 .bg-custom-1 {
