@@ -1,7 +1,7 @@
 body {
-    font-family: 'Roboto Mono', sans-serif; 
-    font-family: Arial, sans-serif;
-  }
+  font-family: 'Roboto Mono', sans-serif; 
+  font-family: Arial, sans-serif;
+}
 
 /*Header*/
 .navbar-simi{
@@ -115,9 +115,6 @@ body {
   }
 
 
-
-
-
 /* Cards */
 .bg-custom{
     text-align: center;
@@ -126,9 +123,9 @@ body {
 #cards-section {
     background-color: #f4eefe; 
     position: relative; 
-    min-height: 100%; 
-    width: 100%; 
-    padding: 10px; 
+    min-height: 400px; 
+    width: 100%;
+    padding: 20px 10px; 
 }
 
 #cards-section-1 {
@@ -148,6 +145,7 @@ body {
 .title-above-cards {
   position: relative;
   z-index: 2;
+  top: -30px; 
 }
 
 
