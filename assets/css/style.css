@@ -166,8 +166,22 @@ body {
     height: auto; 
 }
 
-#people-images{
-    padding: 50px;
+#people-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -10px;
+}
+
+.container.people-images {
+  max-width: 100%;
+}
+
+.hero-image {
+  max-height: 749px; /* Ajusta el valor según la altura deseada */
+  width: auto;
+  margin: 0 auto;
+  margin-left: -15px;
 }
 
 .image-wrapper {
