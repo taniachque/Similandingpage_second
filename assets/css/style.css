@@ -178,7 +178,7 @@ body {
 }
 
 .hero-image {
-  max-height: 749px; /* Ajusta el valor según la altura deseada */
+  max-height: 749px;
   width: auto;
   margin: 0 auto;
   margin-left: -15px;
