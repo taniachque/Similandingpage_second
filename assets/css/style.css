@@ -179,6 +179,15 @@ body {
 
 
 
+
+/* Logos sections */
+#apoyo.apoyo {
+  margin-top: -100px;
+  margin-bottom: 50px; 
+}
+
+
+
 /* Footer */
 #footer{
     background-color: #99e968; 
