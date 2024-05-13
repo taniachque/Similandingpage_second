@@ -285,6 +285,16 @@
       </div>
     </section>
 
+    <div class="scroll-message">
+      <p>¿Quieres dejar alguna sugerencia?</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf91IAN8xH9o4VQnELxAWdFbj6iYhXcgyOsRMGYHD8BrpZ8Qw/viewform" target="_blank">Has click acá para mandarnos tu sugerencia</a>
+    </div>
+
+    <div class="scroll-message">
+      <p>¿Quieres dejar alguna sugerencia?</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf91IAN8xH9o4VQnELxAWdFbj6iYhXcgyOsRMGYHD8BrpZ8Qw/viewform" target="_blank">Has click acá para mandarnos tu sugerencia</a>
+    </div>
+
     <!--  Footer  -->
     <footer id="footer">
       <div class="container">
@@ -320,5 +330,27 @@
       });
     </script>
 
+    <script>
+      var scrollMessage = document.querySelector('.scroll-message');
+      var prevScrollPos = window.pageYOffset;
+
+      window.addEventListener('scroll', function() {
+        var currentScrollPos = window.pageYOffset;
+        var scrollPosition = window.scrollY;
+        var elementPosition = document.getElementById('people-images').offsetTop;
+
+        if (scrollPosition > elementPosition - window.innerHeight + 200) {
+          scrollMessage.style.display = 'block';
+        } else {
+          scrollMessage.style.display = 'none';
+        }
+
+        if (currentScrollPos < prevScrollPos) {
+          scrollMessage.style.display = 'none';
+        }
+
+        prevScrollPos = currentScrollPos;
+      });
+    </script>
   </body>
 </html>
