@@ -286,13 +286,14 @@
     </section>
 
     <div class="scroll-message">
+      <img src="assets/images/problemasimi.png" alt="Imagen 1">
       <p>¿Quieres dejar alguna sugerencia?</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf91IAN8xH9o4VQnELxAWdFbj6iYhXcgyOsRMGYHD8BrpZ8Qw/viewform" target="_blank">Has click acá para mandarnos tu sugerencia</a>
     </div>
 
-    <div class="scroll-message">
-      <p>¿Quieres dejar alguna sugerencia?</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf91IAN8xH9o4VQnELxAWdFbj6iYhXcgyOsRMGYHD8BrpZ8Qw/viewform" target="_blank">Has click acá para mandarnos tu sugerencia</a>
+     <div class="scroll-message-2">
+      <p>¿Encontraste un error?</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDCzuKpa-6jABQICgjvb9mYONlmQ1XKc24IuuLLlbmobTDpQ/viewform" target="_blank">Ayudanos a mejorar</a>
     </div>
 
     <!--  Footer  -->
@@ -331,7 +332,8 @@
     </script>
 
     <script>
-      var scrollMessage = document.querySelector('.scroll-message');
+      var scrollMessage1 = document.querySelector('.scroll-message');
+      var scrollMessage2 = document.querySelector('.scroll-message-2');
       var prevScrollPos = window.pageYOffset;
 
       window.addEventListener('scroll', function() {
@@ -340,13 +342,20 @@
         var elementPosition = document.getElementById('people-images').offsetTop;
 
         if (scrollPosition > elementPosition - window.innerHeight + 200) {
-          scrollMessage.style.display = 'block';
+          scrollMessage1.style.display = 'block';
         } else {
-          scrollMessage.style.display = 'none';
+          scrollMessage1.style.display = 'none';
+        }
+
+        if (scrollPosition > elementPosition + 200) {
+          scrollMessage2.style.display = 'block';
+        } else {
+          scrollMessage2.style.display = 'none';
         }
 
         if (currentScrollPos < prevScrollPos) {
-          scrollMessage.style.display = 'none';
+          scrollMessage1.style.display = 'none';
+          scrollMessage2.style.display = 'none';
         }
 
         prevScrollPos = currentScrollPos;

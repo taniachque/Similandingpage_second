@@ -234,9 +234,6 @@ body {
 }
 
 
-
-
-
 /* Logos sections */
 #apoyo.apoyo {
   margin-top: -100px;
@@ -246,7 +243,7 @@ body {
 /* Para el redireccionar a otra pestaña para usgerencias */
 .scroll-message {
   position: fixed;
-  top: 50%;
+  top: 20%;
   left: 70%;
   transform: translate(-50%, -50%);
   z-index: 999;
@@ -266,7 +263,38 @@ body {
   font-weight: bold;
 }
 
+.scroll-message-2 {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}
 
+.scroll-message p,
+.scroll-message-2 p {
+  margin: 0;
+}
+
+.scroll-message a,
+.scroll-message-2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.scroll-message img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  width: 150px; /* Ajusta el ancho de la imagen según tus necesidades */
+  background-color: transparent; /* Establece el fondo transparente */
+}
 
 
 
