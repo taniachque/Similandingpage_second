@@ -243,19 +243,19 @@
         </div>
     
         <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6 d-flex justify-content-center">
             <div class="logo" data-aos="zoom-in">
               <img src="assets/images/logolabtecnosocial.png" class="img-fluid" alt="">
             </div>
           </div>
     
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="col-lg-3 col-md-4 col-xs-6 d-flex justify-content-center">
             <div class="logo" data-aos="zoom-in" data-aos-delay="100">
               <img src="assets/images/logoatuqyachachiq.png" class="img-fluid" alt="">
-              </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
       <!--  Apoyo Section  -->
@@ -285,16 +285,26 @@
       </div>
     </section>
 
+    <!--  Sugerenciasn  -->
     <div class="scroll-message">
-      <img src="assets/images/problemasimi.png" alt="Imagen 1">
+      <div class="close-btn">
+        <span class="close-icon">×</span>
+      </div>
       <p>¿Quieres dejar alguna sugerencia?</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf91IAN8xH9o4VQnELxAWdFbj6iYhXcgyOsRMGYHD8BrpZ8Qw/viewform" target="_blank">Has click acá para mandarnos tu sugerencia</a>
+
+      <p>¿Encontraste un error?</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDCzuKpa-6jABQICgjvb9mYONlmQ1XKc24IuuLLlbmobTDpQ/viewform" target="_blank">Reporta el error haciendo click acá</a>
+
+      <img src="assets/images/problemasimi.png" alt="Imagen 1">
     </div>
 
+    <!--
      <div class="scroll-message-2">
       <p>¿Encontraste un error?</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDCzuKpa-6jABQICgjvb9mYONlmQ1XKc24IuuLLlbmobTDpQ/viewform" target="_blank">Ayudanos a mejorar</a>
-    </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDCzuKpa-6jABQICgjvb9mYONlmQ1XKc24IuuLLlbmobTDpQ/viewform" target="_blank">Reporta el error haciendo click acá</a>
+    </div> -->
+
 
     <!--  Footer  -->
     <footer id="footer">
@@ -361,5 +371,16 @@
         prevScrollPos = currentScrollPos;
       });
     </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var scrollMessage = document.querySelector('.scroll-message');
+        var closeBtn = document.querySelector('.scroll-message .close-btn');
+
+        closeBtn.addEventListener('click', function() {
+          scrollMessage.style.display = 'none';
+        });
+      });
+</script>
   </body>
 </html>
